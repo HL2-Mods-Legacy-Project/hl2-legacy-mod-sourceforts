@@ -1,12 +1,11 @@
 & "$PSScriptRoot\..\gitmodules\mod-installer\build_all.ps1" `
-  -Version "<version>" `
+  -Version "2.0.0" `
   -PreReleaseVersion "beta.1" `
-  -OutputFilePrefix "<output file prefix>" `
-  -ModName "<mod name>" `
-  -ModFolder "<mod folder>" `
-  -AdditionalModFolders @() `
+  -OutputFilePrefix "Sourceforts_1.9.4_Client" `
+  -ModName "Sourceforts 1.9.4 Client" `
+  -ModFolder "sourceforts" `
   -ModFilesPath "$PSScriptRoot\..\game" `
-  -ModBaseFilesUrl "<url to mod base files zip>" `
-  -ModBaseFilesUrlHash "<mod base files zip sha256>" `
-  -ModReadmePath "<mod readme path>" `
+  -ModBaseFilesUrl "https://github.com/HL2-Mods-Legacy-Project/hl2-legacy-registry/releases/download/sourceforts/sourceforts-1.9.4-Client-Original.zip" `
+  -ModBaseFilesUrlHash "cfa5d5dfb15002af431b60a590ab04f2696c1e7df250e10aa8efd53ca7f51d6b" `
+  -ModReadmePath "README.txt" `
   -PublishPath "$PSScriptRoot\..\artifacts\publish"
